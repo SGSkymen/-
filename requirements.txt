@@ -1,0 +1,17 @@
+pywebview[cef]==5.3.2 ; sys_platform == "win32"
+pywebview==5.3.2 ; sys_platform != "win32"
+lightgbm==4.5.0
+pandas==3.0.2
+scikit-learn==1.5.1
+imbalanced-learn==0.12.3
+openpyxl==3.1.5
+pyinstaller==6.10.0
+
+# Примечания:
+# - На Windows pywebview по умолчанию использует WebView2 (edgechromium),
+#   который в 2024+ версиях Windows 10/11 предустановлен системой; отдельный
+#   рантайм WebView2 Runtime нужно приложить к дистрибутиву только для
+#   "чистых" корпоративных образов без него (Evergreen Bootstrapper от MS).
+# - lightgbm тянет за собой libomp — при onefile-сборке PyInstaller обычно
+#   подхватывает нужные .dll автоматически, но при ошибке
+#   "OSError: library not found" добавьте hook вручную (см. README, раздел "Сборка").
