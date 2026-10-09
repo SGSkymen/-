@@ -1,0 +1,12 @@
+2026-09-08 17:31:37,388 [INFO] vtb_analytics: БД пуста — генерация базовой синтетической выборки
+2026-09-08 17:31:51,757 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
+2026-09-08 17:32:18,093 [ERROR] vtb_analytics: Ошибка переобучения
+Traceback (most recent call last):
+  File "c:\Users\Пользователь\Desktop\vtb_analytics\backend\api.py", line 324, in retrain_model
+    metrics = self.model.train(df, init_model_path=None, save_as="updated")
+TypeError: ChurnModel.train() got an unexpected keyword argument 'init_model_path'
+2026-09-08 17:34:09,546 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
+2026-09-08 17:44:16,304 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
+2026-09-08 18:27:02,827 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
+2026-09-08 18:37:53,251 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
+2026-09-29 08:53:56,841 [INFO] vtb_analytics: Загружена модель из base_model.txt (через model_str, в обход fopen)
